@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./admin/lib/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./slider/css/styles.css">
 
@@ -90,33 +91,22 @@
   </nav>
 
   <!-- slider start -->
-
-  <!-- <section id="container-slider">
-    <div class="container ">
-      <div class="row">
-        <div id="slider">
-          <div class="slide">
-            <img src="./slider/Img/slider-1.jpg" alt="Image 1">
-          </div>
-          <div class="slide">
-            <img src="./slider/Img/slider-2.jpg" alt="Image 2">
-          </div>
-          <div class="slide">
-            <img src="./slider/Img/slider-3.jpg" alt="Image 3">
-          </div>
-          <div class="slide">
-            <img src="./slider/Img/slider-4.jpg" alt="Image 4">
-          </div>
-          <div class="slide">
-            <img src="./slider/Img/slider-5.jpg" alt="Image 5">
-          </div>
-          <div class="slide">
-            <img src="./slider/Img/slider-6.jpg" alt="Image 6">
-          </div>
+  <div class="section">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./slider/Img/slide-2.jpg" style="width:100%">
         </div>
+        <div class="item">
+          <img src="./slider/Img/slide-3.jpg" style="width:100%">
+        </div>
+        <div class="item">
+          <img src="./slider/Img/slide-1.jpg" style="width:100%">
+        </div>
+
       </div>
     </div>
-  </section> -->
+  </div>
 
   <!-- slider End -->
 
@@ -129,16 +119,16 @@
           <h2 class="mb-2 mb-md-0">Services</h2>
         </div>
       </div>
-      <div class="mt-3 pt-3" data-aos="fade-in">
+      <div data-aos="fade-in">
         <div class="carousel-project owl-carousel">
           <div class="service-item">
-            <picture class="position-relative">
+            <figcaption class="position-relative">
               <img alt="" class="w-100" src="./slider/Img/slider-6.jpg">
               <div class="text-black">
-                <h3 class="mb-2 ">Front-End Development</h3>
+                <h3 class="">Front-End Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, pariatur.</p>
               </div>
-            </picture>
+            </figcaption>
           </div>
           <div class="service-item">
             <picture class="position-relative">
@@ -157,7 +147,7 @@
 
   <!-- FAQ and video part start -->
 
-  <section>
+  <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -206,15 +196,15 @@
         <div class="carousel-project owl-carousel">
           <div class="service-item">
             <picture class="position-relative">
-              <img alt="" class="w-100" src="./slider/Img/travlling vlog.webp">
-              <div class="text-black">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta unde fuga perspiciatis impedit, in libero, architecto pariatur harum expedita tempore veritatis consectetur tempora inventore velit hic, sapiente sequi minima? Laboriosam aliquam, temporibus id molestias officiis sed eos tempore repellat iure necessitatibus totam praesentium sit ea voluptas cumque eius quo minus, delectus deserunt veniam nihil? Illum id nemo natus enim nam neque animi deserunt, omnis, consequuntur explicabo placeat obcaecati eius amet pariatur rem sint quam quidem soluta repudiandae excepturi non quod et sunt? Nisi, obcaecati! Aliquam reprehenderit autem nulla dolorem tenetur dignissimos perferendis tempore saepe perspiciatis eum, recusandae itaque laudantium accusantium vero voluptates error quos quis. Amet reprehenderit, nisi vitae quae quos cumque hic aperiam aspernatur modi magnam laudantium. Neque magni ducimus eius dicta porro exercitationem laudantium maxime distinctio vitae nemo! Iure, recusandae illo? Quas magni, illum quibusdam exercitationem aliquid expedita deserunt, recusandae sequi sed, quis velit neque. Ratione assumenda totam ea, repudiandae deserunt at possimus incidunt similique fugit commodi saepe perferendis illo labore et ipsa iste iure consequuntur eius? Perferendis dicta iusto, voluptatem sit rem voluptas deleniti sapiente dolore eum quasi! Minima culpa autem veniam, ratione officia nostrum perferendis fugit molestias temporibus sapiente quasi corporis adipisci harum deserunt ex. Animi accusantium tempore, at voluptas adipisci temporibus possimus dolore est voluptatibus. Suscipit quos corrupti labore reprehenderit odit explicabo officia quae magni ullam accusamus debitis velit consequatur inventore, quasi dicta, tempore maxime autem similique amet consectetur molestias dolorum. Commodi incidunt possimus culpa nostrum placeat ducimus laboriosam harum, beatae deserunt deleniti officia fugiat tempora eligendi qui inventore minima labore illum minus? Nihil sit laborum facilis. Nulla quibusdam aperiam fugit mollitia id facilis labore sequi ex facere. Dolor, voluptatem necessitatibus placeat facere numquam aspernatur esse possimus odio eos tenetur magni natus aliquid velit voluptates ex! Aliquam ex commodi delectus vero a inventore autem corrupti in libero quod hic quam distinctio debitis, culpa modi nemo provident neque mollitia earum placeat recusandae necessitatibus. Praesentium ullam dignissimos laboriosam cumque sit, aut cum suscipit dolor eos maiores quaerat accusantium quam reiciendis consequatur ducimus autem, sequi, provident unde! Non perferendis id placeat recusandae illum deleniti incidunt aliquid. Praesentium repellendus, in non, delectus quod tempore fuga sint, et modi hic facilis aperiam dicta atque pariatur maiores repellat ea consequatur id ipsam? Sequi, deserunt corrupti exercitationem quis commodi in fuga similique odio quos esse, numquam expedita, atque nemo consequatur fugiat facere vel velit. Accusantium qui, harum adipisci rerum ipsum dolore dolorum ad perspiciatis necessitatibus magni sed quis consectetur placeat fuga natus, ex totam? Magnam eligendi earum, molestias quas laudantium quis possimus temporibus fugit odit dolorem molestiae ullam a recusandae impedit amet unde nobis rerum tempora labore aperiam sunt natus! Cupiditate enim odit nam alias eum ex magnam quidem, itaque placeat optio. Officiis aperiam, iste maiores numquam, nesciunt eligendi perspiciatis vero explicabo dolor molestiae ipsum nobis quod praesentium iure accusamus eveniet earum nemo eaque error quisquam consectetur corrupti molestias obcaecati repellendus? Voluptas tempora placeat magnam ducimus veritatis consectetur, nihil esse libero vel autem assumenda itaque, laborum repellat rerum aspernatur aliquid modi.</p>
+              <img alt="" class="w-50" src="./slider/Img/slider-4.jpg">
+              <div class="text-black mt-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at consequatur recusandae maxime amet totam, quo mollitia tenetur eius fuga maiores accusantium libero quaerat necessitatibus nesciunt tempore! Nostrum, sapiente veritatis. Adipisci laborum non, accusamus atque enim reiciendis blanditiis quam. Laudantium eum atque iste necessitatibus dolore delectus vero quis fugiat libero?</p>
               </div>
             </picture>
           </div>
           <div class="service-item">
             <picture class="position-relative">
-              <img alt="" class="w-100" src="./slider/Img/slider-2.jpg">
+              <img alt="" class="w-50" src="./slider/Img/slider-2.jpg">
               <div class="text-black">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga placeat qui quibusdam debitis, amet tenetur inventore suscipit. Ea pariatur magni molestiae, voluptates modi blanditiis accusantium ab quas sit, inventore nesciunt velit ullam, beatae ipsam assumenda quisquam temporibus. Modi laudantium ad hic quo quidem architecto dolorem iure deleniti delectus eius!</p>
               </div>
@@ -236,11 +226,11 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <h6 class="text-white mb-4">Phone:</h6>
-            <p class="text-white mb-4">+72323156466:</p>
+            <p class="text-white mb-4">+8801621311671:</p>
           </div>
           <div class="col-md-6 col-lg-4">
             <h6 class="text-white mb-4">Email:</h6>
-            <p class="text-white mb-4">Richard@example.com</p>
+            <p class="text-white mb-4">rabbyshamsularefin@gmail.com</p>
           </div>
           <div class="col-md-6 col-lg-4">
             <h6 class="text-white mb-4">Follow me:</h6>
@@ -255,7 +245,7 @@
       </div>
     </div>
     <div class="footer-copy section-sm">
-      <div class="container">© Copyright 2020 Richard. All Rights Reserved</div>
+      <div class="container">© Copyright 2023 Rizvee. All Rights Reserved</div>
     </div>
   </footer>
   <!-- Footer End -->
@@ -276,7 +266,27 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/interface.js"></script>
 
+  <script>
+    autoplay: false
+    autoplayTimeout: 5000
+    autoplayHoverPause: false
 
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [5000])
+    })
+    // $('.stop').on('click', function() {
+    //   owl.trigger('stop.owl.autoplay')
+    // })
+  </script>
 
 </body>
 
