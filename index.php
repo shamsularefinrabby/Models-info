@@ -51,14 +51,12 @@
       <ul class="navbar-nav-desctop  m-auto d-none d-lg-block">
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#experience">Profiles</a></li>
-        <li><a class="nav-link" href="#projects">FaQ's</a></li>
-        <li><a class="nav-link" href="#testimonials">Vlog</a></li>
+        <li><a class="nav-link" href="#profile">Profiles</a></li>
+        <li><a class="nav-link" href="#faq's">FaQ's</a></li>
+        <li><a class="nav-link" href="#blogs">Blog</a></li>
       </ul>
-      <a href="">
-        <button type="button" class="btn btn-info">Login</button>
-        <button type="button" class="btn btn-info">Register</button>
-      </a>
+      <a href=""><button type="button" class="btn btn-info">Login</button></a>
+      <a href="./admin/register.php"><button type="button" class="btn btn-info">Register</button></a>
 
       <!-- Social -->
 
@@ -91,9 +89,9 @@
   </nav>
 
   <!-- slider start -->
-  <div class="section">
+  <section class="section">
     <div class="container">
-      <div class="owl-carousel owl-theme">
+      <div class="slide1 owl-carousel owl-theme">
         <div class="item">
           <img src="./slider/Img/slide-2.jpg" style="width:100%">
         </div>
@@ -104,9 +102,10 @@
           <img src="./slider/Img/slide-1.jpg" style="width:100%">
         </div>
 
+
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- slider End -->
 
@@ -114,14 +113,16 @@
 
   <section class="section">
     <div class="container">
-      <div class="row align-items-end">
-        <div class="col-md-6" data-aos="fade-up">
-          <h2 class="mb-2 mb-md-0">Services</h2>
+      <div class="row">
+        <div class="col-md-12 aos-init aos-animate" data-aos="fade-up">
+          <h3 class="text-center text-warning mb-3 pt-3 mb-md-0">Our Services</h3>
+          <hr>
         </div>
       </div>
-      <div data-aos="fade-in">
-        <div class="carousel-project owl-carousel">
-          <div class="service-item">
+
+      <div class="row">
+        <div class="slide2 owl-carousel owl-theme">
+          <div class="item">
             <figcaption class="position-relative">
               <img alt="" class="w-100" src="./slider/Img/slider-6.jpg">
               <div class="text-black">
@@ -130,7 +131,7 @@
               </div>
             </figcaption>
           </div>
-          <div class="service-item">
+          <div class="item">
             <picture class="position-relative">
               <img alt="" class="w-100" src="./slider/Img/slider-2.jpg">
               <div class="text-black">
@@ -155,12 +156,25 @@
             <div class="bd-highlight">
               <h3>FAQ's</h3>
             </div>
-            <div class="p-2 bd-highlight">
-              <ul>
-                <li><a href="#">What is modeling?</a></li>
-                <li><a href="#">How to hier a model for your Show?</a></li>
-
-              </ul>
+            <div class="dropdown mt-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                What is modeling?
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, exercitationem.</p>
+                </a>
+              </div>
+            </div>
+            <div class="dropdown mt-2">
+              <button class="btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                how to hire a mode?
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -170,9 +184,53 @@
               <video width="640" height="360" controls>
                 <source src="./videos/দুর্ধর্ষ ড্রোন দিয়ে ইসরাইলে হামাসের বাজিমাত _ Israel-Palestine War _ Hamas _ Somoy TV.mp4" type="video/mp4">
               </video>
-              <div>
-                <h2>Contact Us</h2>
-                <h5>115,Lake circus kalabagan Dhaka-1205</h5>
+
+              <div class="">
+                <div>
+                  <h2 class="text-center text-info mt-3 pt-3 mb-md-0">Contact US</h2>
+                  <hr>
+                </div>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized b</p>
+
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#send-request">
+                    Let's Talk
+                  </button>
+
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="send-request" tabindex="1" role="dialog" aria-labelledby="send-requestTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="">
+                          <h5 class="modal-title" id="send-requestTitle">Send Message</h5>
+                          <hr>
+                          <p id="send-request">Leave your contacts and our team will contact you soon.</p>
+                        </div>
+                        <div class="modal-body text-left">
+                          <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter your name*">
+                            </div>
+                            <div class="form-group">  
+                              <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter your email*">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Contact Number*">
+                            </div>
+                          </form>
+
+                        </div>
+                        <div class="">
+                          <a href="#home"><button type="button" class="btn btn-primary mb-5">Submit</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal's end -->
+                </div>
+
               </div>
             </div>
           </div>
@@ -185,38 +243,46 @@
 
   <!-- vlogs part start -->
 
-  <section class="section">
+  <section class="section" id="blogs">
     <div class="container">
-      <div class="row align-items-end">
-        <div class="col-md-6" data-aos="fade-up">
-          <h2 class="mb-2 mb-md-0">Vlogs</h2>
+      <div class="row">
+        <div class="col-md-12 aos-init aos-animate" data-aos="fade-up">
+          <h3 class="text-center text-warning mb-3 pt-3 mb-md-0">Blogs</h3>
+          <hr>
         </div>
       </div>
-      <div class="mt-3 pt-3" data-aos="fade-in">
-        <div class="carousel-project owl-carousel">
-          <div class="service-item">
-            <picture class="position-relative">
-              <img alt="" class="w-50" src="./slider/Img/slider-4.jpg">
-              <div class="text-black mt-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at consequatur recusandae maxime amet totam, quo mollitia tenetur eius fuga maiores accusantium libero quaerat necessitatibus nesciunt tempore! Nostrum, sapiente veritatis. Adipisci laborum non, accusamus atque enim reiciendis blanditiis quam. Laudantium eum atque iste necessitatibus dolore delectus vero quis fugiat libero?</p>
-              </div>
-            </picture>
-          </div>
-          <div class="service-item">
-            <picture class="position-relative">
-              <img alt="" class="w-50" src="./slider/Img/slider-2.jpg">
-              <div class="text-black">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga placeat qui quibusdam debitis, amet tenetur inventore suscipit. Ea pariatur magni molestiae, voluptates modi blanditiis accusantium ab quas sit, inventore nesciunt velit ullam, beatae ipsam assumenda quisquam temporibus. Modi laudantium ad hic quo quidem architecto dolorem iure deleniti delectus eius!</p>
-              </div>
-            </picture>
-          </div>
+
+      <div class="slide2 owl-carousel owl-theme">
+
+
+
+        <div class="service-item">
+          <picture class="position-relative">
+            <img alt="" class="" src="./slider/Img/slider-4.jpg">
+            <div class="text-black mt-2">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ?</p>
+            </div>
+          </picture>
+        </div>
+        <div class="service-item">
+          <picture class="position-relative">
+            <img alt="" class="" src="./slider/Img/slider-2.jpg">
+            <div class="text-black">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+            </div>
+          </picture>
         </div>
       </div>
+
     </div>
   </section>
 
 
   <!-- vlogs part end -->
+
+
+
+
 
   <!-- Footer Start -->
 
@@ -266,27 +332,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/interface.js"></script>
 
-  <script>
-    autoplay: false
-    autoplayTimeout: 5000
-    autoplayHoverPause: false
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 1,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true
-    });
-    $('.play').on('click', function() {
-      owl.trigger('play.owl.autoplay', [5000])
-    })
-    // $('.stop').on('click', function() {
-    //   owl.trigger('stop.owl.autoplay')
-    // })
-  </script>
+  <script src="./slider/js/script.js"></script>
 
 </body>
 

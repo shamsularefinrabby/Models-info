@@ -1,23 +1,32 @@
-autoplay:false
-autoplayTimeout:5000
-autoplayHoverPause:false
+var owl = $('.slide1');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      nav: false,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+    });
 
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:1,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[5000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
-
+    var owl1 = $('.slide2');
+    owl1.owlCarousel({
+      items: 3,
+      loop: true,
+      nav: false,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+    });
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [5000])
+      owl1.trigger('play.owl1.autoplay', [5000])
+    })
+    $('.stop').on('click', function() {
+      owl.trigger('stop.owl.autoplay')
+      owl1.trigger('stop.owl1.autoplay')
+    })
 
 
 
