@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 
 <head>
-  <title>Richard- admin register</title>
+  <title>admin register</title>
 
   <!-- vendor css -->
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
