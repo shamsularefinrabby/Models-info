@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../db.php";
+require_once "./db.php";
 
 
 $email_address= $_POST['email'];
@@ -11,8 +11,8 @@ $after_count=mysqli_query(connect_to_db(), $count_query);
 $after_assoc=mysqli_fetch_assoc($after_count);
 if($after_assoc['login_capability']==1){
     $_SESSION['email_status']= true;
-    $email_to_name_query= "SELECT name FROM users WHERE email='$email_address'";
-    $email_to_name_after_assoc = mysqli_fetch_assoc((mysqli_query(connect_to_db(), $email_to_name_query)))['name']; 
+    $email_to_name_query= "SELECT first_name FROM users WHERE email='$email_address'";
+    $email_to_name_after_assoc = mysqli_fetch_assoc((mysqli_query(connect_to_db(), $email_to_name_query)))['first_name']; 
     $_SESSION['email_to_name'] = $email_to_name_after_assoc;
     header('location: dashboard.php');
 }

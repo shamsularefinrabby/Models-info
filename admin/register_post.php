@@ -2,14 +2,20 @@
 
 session_start();
 $flag=true;
-require_once "../db.php";
+require_once "./db.php";
 
 
-if (!$_POST['name']) {
+if (!$_POST['first_name']) {
     $_SESSION['name_error'] = "Name field must required";
     $flag=false;
 }else{
-    $_SESSION['old_name']= $_POST['name'];
+    $_SESSION['old_name']= $_POST['first_name'];
+}
+if (!$_POST['last_name']) {
+    $_SESSION['name_error'] = "Name field must required";
+    $flag=false;
+}else{
+    $_SESSION['old_name']= $_POST['last_name'];
 }
 
 if (!$_POST['email']) {
@@ -19,6 +25,15 @@ if (!$_POST['email']) {
 else{
     $_SESSION['old_email']= $_POST['email'];
 }
+
+if (!$_POST['mobile']) {
+    $_SESSION['mobile_error'] = "Mobile number must required";
+    $flag=false;
+}
+else{
+    $_SESSION['old_mobile']= $_POST['mobile'];
+}
+
 if (!$_POST['password']) {
     $_SESSION['password_error'] = "Password field must required";
     $flag=false;
@@ -43,14 +58,16 @@ else{
 
 }
 if($flag){
-    $name=$_POST['name'];
+    $first_name=$_POST['first_name'];
+    $last_name=$_POST['last_name'];
     $email=$_POST['email'];
     $password=md5($_POST['password']);
+    $mobile=$_POST['mobile'];
     $gender=$_POST['gender'];
 
 
     $email_check_query="SELECT COUNT(*) AS email_match_error FROM users WHERE email='$email'";
-    // $after_check= mysqli_query(connect_to_db(), $email_check_query);
+    $after_check= mysqli_query(connect_to_db(), $email_check_query);
     $after_assoc= mysqli_fetch_assoc($after_check);
     if($after_assoc['email_match_error'] == 1){
         $_SESSION['email_match_error'] = "email already taken";
@@ -61,8 +78,8 @@ if($flag){
     date_default_timezone_set('Asia/dhaka');
     $current_time_date = date('Y-m-d h:i:s');
     
-    $insert_query="INSERT INTO users(name,email,password,gender,created_at) values('$name','$email','$password','$gender','$current_time_date')";
-    // $db_query=mysqli_query(connect_to_db(),$insert_query);
+    $insert_query="INSERT INTO users(first_name,last_name,email,password,mobile,gender,created_at) values('$first_name','$last_name','$email','$password','$mobile','$gender','$current_time_date')";
+    $db_query=mysqli_query(connect_to_db(),$insert_query);
     
     $_SESSION['success_msg']= "you are successfully registered";
     $_SESSION['email_address']= $_POST['email'];

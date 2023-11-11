@@ -30,24 +30,35 @@ session_start();
         </div>
       <?php endif; ?>
       <form action="register_post.php" method="post">
-        <div class="form-group">
-          <input type="text" class="form-control <?= (isset($_SESSION['name_error']) ? 'is-invalid' : '') ?>" placeholder="Enter your name" name="name" value="<?= (isset($_SESSION['old_name'])) ? $_SESSION['old_name'] : '' ?>">
+        
+      <div class="form-group">
+          <input type="text" class="form-control <?= (isset($_SESSION['name_error']) ? 'is-invalid' : '') ?>" placeholder="Enter your firstname" name="first_name" value="<?= (isset($_SESSION['old_name'])) ? $_SESSION['old_name'] : '' ?>">
           <?php if (isset($_SESSION['name_error'])) : ?>
             <small class="text-danger"><?= $_SESSION['name_error'] ?></small>
           <?php endif; ?>
         </div><!-- form-group -->
+
+      <div class="form-group">
+          <input type="text" class="form-control <?= (isset($_SESSION['name_error']) ? 'is-invalid' : '') ?>" placeholder="Enter your lastname" name="last_name" value="<?= (isset($_SESSION['old_name'])) ? $_SESSION['old_name'] : '' ?>">
+          <?php if (isset($_SESSION['name_error'])) : ?>
+            <small class="text-danger"><?= $_SESSION['name_error'] ?></small>
+          <?php endif; ?>
+        </div><!-- form-group -->
+        
         <div class="form-group">
           <input type="email" class="form-control <?= (isset($_SESSION['email_error']) ? 'is-invalid' : '') ?>" placeholder="Enter your email" name="email" value="<?= (isset($_SESSION['old_email'])) ? $_SESSION['old_email'] : '' ?>">
           <?php if (isset($_SESSION['email_error'])) : ?>
             <small class="text-danger"><?= $_SESSION['email_error'] ?></small>
           <?php endif; ?>
         </div><!-- form-group -->
+
         <div class="form-group">
           <input type="password" class="form-control <?= (isset($_SESSION['password_error']) ? 'is-invalid' : '') ?>" placeholder="Enter your password" name="password">
           <?php if (isset($_SESSION['password_error'])) : ?>
             <small class="text-danger"><?= $_SESSION['password_error'] ?></small>
           <?php endif; ?>
         </div><!-- form-group -->
+
         <div class="form-group">
           <input type="password" class="form-control <?= (isset($_SESSION['confirm_password_error']) ? 'is-invalid' : '') ?>" placeholder="Retype your password" name="confirm_password">
           <?php if (isset($_SESSION['confirm_password_error'])) : ?>
@@ -61,8 +72,11 @@ session_start();
 
         <div class="form-group">
           <div class="d-flex">
-            <input type="text" class="form-control" value="+88" style="width: 25%" readonly="">
+            <input type="text" class="form-control <?= (isset($_SESSION['mobile_error']) ? 'is-invalid' : '') ?>" value="+88 <?= (isset($_SESSION['old_mobile'])) ? $_SESSION['old_mobile'] : '' ?>" style="width: 25%" readonly="">
             <input type="text" name="mobile" class="form-control " placeholder="017XXXXXXXX" value="">
+            <?php if (isset($_SESSION['mobile_error'])) : ?>
+            <small class="text-danger"><?= $_SESSION['mobile_error'] ?></small>
+            <?php endif; ?>
           </div>
         </div>
 
@@ -81,8 +95,10 @@ session_start();
             <span>Others</span>
           </label>
         </div>
+
         <p>By clicking the Sign Up button below, you agreed to our privacy policy and terms of use of our website.</p>
         <button type="submit" class="btn btn-info btn-block">Sign Up</button>
+
       </form>
       <div class="mg-t-40 tx-center">Already have an account? <a href="login.php" class="tx-info">Login</a></div>
     </div><!-- login-wrapper -->
