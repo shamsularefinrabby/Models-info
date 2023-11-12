@@ -1,7 +1,5 @@
-$('.panda_icon').click(function () {
-    $('#icon_input').val($(this).attr("id"));
-})
-
-
-
-
+$( document ).ready(function() {
+    
+    // Write your custom Javascript codes here...
+    
+});

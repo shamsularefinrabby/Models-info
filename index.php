@@ -55,7 +55,7 @@
         <li><a class="nav-link" href="#faq's">FaQ's</a></li>
         <li><a class="nav-link" href="#blogs">Blog</a></li>
       </ul>
-      <a href=""><button type="button" class="btn btn-info">Login</button></a>
+      <a href="./admin/login.php"><button type="button" class="btn btn-info">Login</button></a>
       <a href="./admin/register.php"><button type="button" class="btn btn-info">Register</button></a>
 
       <!-- Social -->

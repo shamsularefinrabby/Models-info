@@ -69,6 +69,7 @@ if($flag){
     $email_check_query="SELECT COUNT(*) AS email_match_error FROM users WHERE email='$email'";
     $after_check= mysqli_query(connect_to_db(), $email_check_query);
     $after_assoc= mysqli_fetch_assoc($after_check);
+
     if($after_assoc['email_match_error'] == 1){
         $_SESSION['email_match_error'] = "email already taken";
         header('location: register.php');
