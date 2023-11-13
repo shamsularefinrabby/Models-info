@@ -49,9 +49,9 @@
       <!-- Brand-->
       <a class="navbar-brand mr-auto mb-auto mt-auto" href="#">LOGO</a>
       <ul class="navbar-nav-desctop  m-auto d-none d-lg-block">
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#profile">Profiles</a></li>
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#contact">Contacts</a></li>
         <li><a class="nav-link" href="#faq's">FaQ's</a></li>
         <li><a class="nav-link" href="#blogs">Blog</a></li>
       </ul>
@@ -80,10 +80,10 @@
 
     <ul class="navbar-nav navbar-nav-mobile">
       <li><a class="nav-link" href="#home">Home</a></li>
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="#experience">Experience</a></li>
-      <li><a class="nav-link" href="#projects">Projects</a></li>
-      <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+      <li><a class="nav-link" href="#services">Services</a></li>
+      <li><a class="nav-link" href="#contact">Contacts</a></li>
+      <li><a class="nav-link" href="#faq's">FaQ's</a></li>
+      <li><a class="nav-link" href="#blogs">Blog</a></li>
     </ul>
 
   </nav>
@@ -111,7 +111,7 @@
 
   <!-- service Start -->
 
-  <section class="section">
+  <section class="section" id="services">
     <div class="container">
       <div class="row">
         <div class="col-md-12 aos-init aos-animate" data-aos="fade-up">
@@ -151,9 +151,9 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6" id="faq's">
           <div class="d-flex flex-column mb-3">
-            <div class="bd-highlight">
+            <div class="bd-highlight" >
               <h3>FAQ's</h3>
             </div>
             <div class="dropdown mt-2">
@@ -192,7 +192,7 @@
                 </div>
                 <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized b</p>
 
-                <div class="text-center">
+                <div class="text-center" id="contact">
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#send-request">
                     Let's Talk
@@ -200,7 +200,7 @@
 
 
                   <!-- Modal -->
-                  <div class="modal fade" id="send-request" tabindex="1" role="dialog" aria-labelledby="send-requestTitle" aria-hidden="true">
+                  <div  class="modal fade" id="send-request" tabindex="1" role="dialog" aria-labelledby="send-requestTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="">
